@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart page - RedStore</title>
+    <!-- font-awesome icon-kit -->
+    <script
+      src="https://kit.fontawesome.com/f16641d2de.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"> <img src="./assets/logo.png" alt="Logo_image" width="125px" /></a>
+         
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./products.html">Product</a></li>
+            <li><a href="https://redhomestore.com/" target="blank">About</a></li>
+            <li><a href="./accountpage.html">Contact</a></li>
+            <li><a href="./accountpage.html">Account</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html"><img
+          src="./assets/cart.png"
+          alt="Cart_image"
+          width="30px"
+          height="30px"
+        /></a>
+        
+        <img
+          src="./assets/menu.png"
+          alt="menu"
+          class="menu-icon"
+          onclick="menutoggle()"
+        />
+      </div>
+    </div>
+
+    <!---------------------------------- Cart items details ----------------------------->
+   <!-- Yaha pe ek chhoti-container hai jo cart page ke liye hai -->
+<div class="small-container cart-page">
+  <table>
+    <tr>
+      <!-- Product ke column -->
+      <th>Product</th>
+      <!-- Quantity ke column -->
+      <th>Quantity</th>
+      <!-- Subtotal ke column -->
+      <th>Subtotal</th>
+    </tr>
+    <!-- Pehli row - Red Printed Tshirt -->
+    <tr>
+      <td>
+        <div class="cart-info">
+          <img src="./assets/buy-1.jpg" alt="buy-1" />
+          <div>
+            <p>Red Printed Tshirt</p>
+            <small>Price : $50.00</small>
+            <br />
+            <!-- Remove link -->
+            <a href="#">Remove</a>
+          </div>
+        </div>
+      </td>
+      <!-- Quantity input -->
+      <td><input type="number" value="1" /></td>
+      <!-- Subtotal amount -->
+      <td>$50.00</td>
+    </tr>
+
+    <!-- Dusri row - Red Printed Tshirt -->
+    <tr>
+      <td>
+        <div class="cart-info">
+          <img src="./assets/buy-2.jpg" alt="buy-1" />
+          <div>
+            <p>Red Printed Tshirt</p>
+            <small>Price : $75.00</small>
+            <br />
+            <!-- Remove link -->
+            <a href="#">Remove</a>
+          </div>
+        </div>
+      </td>
+      <!-- Quantity input -->
+      <td><input type="number" value="1" /></td>
+      <!-- Subtotal amount -->
+      <td>$50.00</td>
+    </tr>
+
+    <!-- Teesri row - Red Printed Tshirt -->
+    <tr>
+      <td>
+        <div class="cart-info">
+          <img src="./assets/buy-3.jpg" alt="buy-1" />
+          <div>
+            <p>Red Printed Tshirt</p>
+            <small>Price : $50.00</small>
+            <br />
+            <!-- Remove link -->
+            <a href="#">Remove</a>
+          </div>
+        </div>
+      </td>
+      <!-- Quantity input -->
+      <td><input type="number" value="1" /></td>
+      <!-- Subtotal amount -->
+      <td>$100.00</td>
+    </tr>
+  </table>
+
+  <!-- Total price calculation -->
+  <div class="total-price">
+    <table>
+      <tr>
+        <!-- Subtotal -->
+        <td>Subtotal</td>
+        <!-- Subtotal amount -->
+        <td>$200.00</td>
+      </tr>
+      <tr>
+        <!-- Tax -->
+        <td>Tax</td>
+        <!-- Tax amount -->
+        <td>$35.00</td>
+      </tr>
+      <tr>
+        <!-- Total -->
+        <td>Total</td>
+        <!-- Total amount -->
+        <td>$230.00</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+
+    <!-- footer  -->
+    <div class="footer">
+      <!-- Footer section start -->
+      <div class="container">
+        <!-- Container div for footer content -->
+        <div class="row">
+          <!-- Row div to arrange columns -->
+
+          <!-- column 1 -->
+          <div class="footer-col-1">
+            <!-- First column in footer -->
+            <h3>Download Our App</h3>
+            <!-- Heading for app download -->
+            <p>Download App for Android and ios mobile phone.</p>
+            <!-- Description for app download -->
+            <div class="app-logo">
+              <!-- Div for app store logos -->
+              <img src="./assets/play-store.png" alt="play-store" />
+              <!-- Play Store logo -->
+              <img src="./assets/app-store.png" alt="app-store" />
+              <!-- App Store logo -->
+            </div>
+          </div>
+
+          <!-- column 2 -->
+          <div class="footer-col-2">
+            <!-- Second column in footer -->
+            <img src="./assets/logo-white.png" alt="logo-white" />
+            <!-- White logo image -->
+            <p>
+              <!-- Purpose statement paragraph -->
+              Our Purpose Is To Sustainably Make the Pleasure and Benifits of
+              Sports Accessible to the Many.
+            </p>
+          </div>
+
+          <!-- column 3 -->
+          <div class="footer-col-3">
+            <!-- Third column in footer -->
+            <h3>Useful Links</h3>
+            <!-- Heading for useful links -->
+            <ul>
+              <!-- Unordered list for links -->
+              <li>Coupons</li>
+              <!-- List item for Coupons -->
+              <li>Blog Post</li>
+              <!-- List item for Blog Post -->
+              <li>Return Policy</li>
+              <!-- List item for Return Policy -->
+              <li>Join Affiliate</li>
+              <!-- List item for Join Affiliate -->
+            </ul>
+          </div>
+
+          <!-- column 4 -->
+          <div class="footer-col-4">
+            <!-- Fourth column in footer,  -->
+            <h3>Follow us</h3>
+            <!-- Heading for social media follow links -->
+            <ul>
+              <!-- Unordered list for social media links -->
+              <li><i class="fa-brands fa-facebook"></i></li>
+              <!-- List item for Facebook -->
+              <li><i class="fa-brands fa-x-twitter"></i></li>
+              <!-- List item for X (Twitter) -->
+              <li><i class="fa-brands fa-instagram"></i></li>
+              <!-- List item for Instagram -->
+              <li><i class="fa-brands fa-youtube"></i></li>
+              <!-- List item for Youtube -->
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <!-- Horizontal rule for separation -->
+        <p class="copyright">ⒸCopyright 2024 - RedStore</p>
+        <!-- Copyright notice -->
+      </div>
+    </div>
+    <!-- Footer section end -->
+
+    <!-- java Script is not required in cart page -->
+     <script src="script.js"></script>
+  </body>
+</html>

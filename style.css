@@ -1,0 +1,826 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+/* Sabhi elements ke margin aur padding ko 0 set kar dete hain, aur box-sizing ko border-box banate hain taaki border aur padding ko width aur height mein include kiya ja sake */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body tag ke liye font-family set karte hain */
+body {
+    font-family: 'Acme', 'Poppins';
+}
+
+/* Navbar ko flex container banate hain aur uske items ko center mein align karte hain */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Nav ko flex container ka 1 part banate hain aur text ko right align karte hain */
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+/* Nav ke andar ul ko inline-block display dete hain aur list-style ko none karte hain taaki bullets na dikhe */
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+/* Nav ke andar ul li ko inline-block banate hain aur right margin dete hain */
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Anchor tags ke liye text-decoration ko none karte hain aur color set karte hain */
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+/* Paragraphs ke liye color set karte hain */
+p {
+    color: #555;
+}
+
+/* Container class ke liye maximum width set karte hain aur auto margin dete hain taaki ye center mein rahe */
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* Row class ko flex container banate hain aur uske items ko space-around se justify karte hain */
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Col-2 class ke liye flex-basis set karte hain aur minimum width dete hain */
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+/* Col-2 ke andar img ke liye maximum width set karte hain aur padding dete hain */
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+/* Col-2 ke andar h1 ke liye font-size aur line-height set karte hain */
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+/* Button class ke liye background color, text color, padding, margin, border-radius set karte hain aur transition effect dete hain */
+.btn {
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+/* Button par hover karne par background color change hota hai */
+.btn:hover {
+    background: #563434;
+}
+
+/* Header section ke liye background set karte hain radial-gradient ke saath */
+.header {
+    background: radial-gradient(#fff, #ffd6d6);
+}
+
+/* Header ke andar row class ke liye top margin set karte hain */
+.header .row {
+    margin-top: 70px;
+}
+
+/* Categories section ke liye top aur bottom margin set karte hain */
+.categories {
+    margin: 70px 0;
+}
+
+/* Col-3 class ke liye flex-basis, minimum width, aur bottom margin set karte hain */
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+/* Col-3 ke andar img ke liye width 100% set karte hain */
+.col-3 img {
+    width: 100%;
+}
+/* col-3 ke andar ki image ko bhi hover effect laga rahe hai */
+.col-3 img:hover{
+    cursor: pointer;
+}
+
+
+/* Small-container class ke liye maximum width set karte hain aur auto margin dete hain */
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* small-container class ki images ko hover kar ne par cursor pointer */
+.row img:hover
+{
+    cursor: pointer;
+}
+/* Col-4 class ke liye flex-basis, padding, minimum width, bottom margin set karte hain aur transition effect dete hain */
+.col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+/* Col-4 ke andar img ke liye width 100% set karte hain */
+.col-4 img {
+    width: 100%;
+}
+
+/* Title class ke liye text-align center, margin, position, line-height, aur color set karte hain */
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+/* Title ke after pseudo-element ke liye content, background, width, height, border-radius, position, bottom, left, aur transform properties set karte hain */
+.title::after {
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* H4 tags ke liye color aur font-weight set karte hain */
+h4 {
+    color: #555;
+    font-weight: normal;
+}
+
+/* Col-4 ke andar paragraph ke liye font-size set karte hain */
+.col-4 p {
+    font-size: 14px;
+}
+
+/* Rating class ke andar i tags ke liye color set karte hain */
+.rating i {
+    color: #ff523b;
+}
+
+/* Col-4 par hover karne par translateY effect dete hain */
+.col-4:hover {
+    transform: translateY(-5px);
+}
+
+
+/*-------------------------------------- offer --------------------------------*/
+.offer {
+    background: radial-gradient(#fff, #ffd6d6);
+    /* Set background gradient */
+    margin-top: 80px;
+    /* Add margin to the top */
+    padding: 30px 0;
+    /* Set padding for the element */
+}
+
+.col-2 .offer-img {
+    padding: 50px;
+    /* Add padding to the image container */
+}
+
+small {
+    color: #555;
+    /* Set color for small text */
+}
+
+
+
+/*---------------------------------- Testimonial------------------------ */
+.testimonial {
+    padding-top: 100px;
+    /* Add padding to the top */
+}
+
+.testimonial .col-3 {
+    text-align: center;
+    padding: 40px 20px;
+    /* Set padding for the element */
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    /* Apply a box shadow */
+    cursor: pointer;
+    /* Show a pointer cursor on hover */
+    transition: transform 0.5s;
+    /* Add a smooth transform effect */
+}
+
+.testimonial .col-3 img {
+    width: 50px;
+    /* Set image width to 50 pixels */
+    margin-top: 20px;
+    /* Add margin to the top of the image */
+    border-radius: 50%;
+    /* Apply rounded corners to the image */
+}
+
+.testimonial .col-3:hover {
+    transform: translateY(-10px);
+    /* Move element up on hover */
+}
+
+.fa.fa-quote-left {
+    font-size: 34px;
+    color: #ff523b;
+    /* Set color for the quote icon */
+}
+
+.col-3 p {
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+    /* Set color for paragraph text */
+}
+
+.testimonial .col-3 h3 {
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+    /* Style the heading */
+}
+
+
+/*-------------------------------------------- brands-------------------------------------- */
+.brands {
+    margin: 100px auto;
+    /* Margin for centering the element */
+}
+
+.col-5 {
+    width: 160px;
+    /* Set the width to 160 pixels */
+}
+
+.col-5 img {
+    width: 100%;
+    /* Make the image fill its container */
+    cursor: pointer;
+    /* Show a pointer cursor on hover */
+    filter: grayscale(100%);
+    /* Initially grayscale the image */
+}
+
+.col-5 img:hover {
+    filter: grayscale(0);
+    /* Remove grayscale effect on hover */
+}
+
+
+/* ---------------------------------footer Section--------------------------------- */
+.footer {
+    /* Background color and text color for the footer */
+
+    background: #000;
+    /* Footer ka background color black hai */
+    color: #8a8a8a;
+    /* Footer ke text ka color light gray hai */
+    font-size: 14px;
+    /* Font size set kiya gaya hai */
+    padding: 60px 0 20px;
+    /* Padding diya gaya hai */
+}
+
+/* Footer paragraph text color */
+.footer p {
+    color: #8a8a8a;
+    /* Paragraph ke text ka color light gray hai */
+}
+
+/* Heading text color and margin */
+.footer h3 {
+    color: #fff;
+    /* Heading ka text color white hai */
+    margin-bottom: 20px;
+    /* Bottom margin set kiya gaya hai */
+}
+
+/* Footer columns' styling */
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+    min-width: 250px;
+    /* Minimum width set kiya gaya hai */
+    margin-bottom: 20px;
+    /* Bottom margin diya gaya hai */
+}
+
+/* Footer column 1 styling */
+.footer-col-1 {
+    flex-basis: 30%;
+    /* Flex basis set kiya gaya hai */
+}
+
+/* Footer column 2 styling */
+.footer-col-2 {
+    flex: 1;
+    /* Flex set kiya gaya hai */
+    text-align: center;
+    /* Text center align kiya gaya hai */
+}
+
+/* Footer column 2 image styling */
+.footer-col-2 img {
+    width: 180px;
+    /* Image ki width set ki gayi hai */
+    margin-bottom: 20px;
+    /* Bottom margin diya gaya hai */
+}
+
+/* Footer column 3 and 4 styling */
+.footer-col-3,
+.footer-col-4 {
+    flex-basis: 12%;
+    /* Flex basis set kiya gaya hai */
+    text-align: center;
+    /* Text center align kiya gaya hai */
+    cursor: pointer;
+    /* cursor pointer kara hai */
+}
+
+
+/* Unordered list styling */
+ul {
+    list-style-type: none;
+    /* List style type remove kiya gaya hai */
+}
+
+/* App logo styling */
+.app-logo {
+    margin-top: 20px;
+    /* Top margin diya gaya hai */
+}
+
+.app-logo img {
+    width: 140px;
+    /* Image ki width set ki gayi hai */
+}
+
+/* Horizontal rule styling for the footer */
+.footer hr {
+    border: none;
+    /* Border remove kiya gaya hai */
+    background: #b5b5b5;
+    /* Background color set kiya gaya hai */
+    height: 1px;
+    /* Height set kiya gaya hai */
+    margin: 20px 0;
+    /* Margin diya gaya hai */
+}
+
+/* Copyright text center aligned */
+.copyright {
+    text-align: center;
+    /* Text center align kiya gaya hai */
+}
+
+/* Menu icon styling */
+.menu-icon {
+    width: 28px;
+    /* Icon ki width set ki gayi hai */
+    margin-left: 20px;
+    /* Left margin diya gaya hai */
+    display: none;
+    /* Display none kiya gaya hai */
+}
+
+
+/*------------ using media query for hiding the hamburger side in large screen ----------------*/
+@media only screen and (max-width:800px) {
+
+    /* Media query sirf screen ke liye jahan maximum width 800px hai */
+    nav ul {
+        /* Navigation menu ki styling chhote screens ke liye */
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    nav ul li {
+        /* List items ki styling navigation menu mein */
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        /* Anchor tags ki styling list items ke andar */
+        color: #fff;
+    }
+
+    .menu-icon {
+        /* Menu icon ki styling */
+        display: block;
+        cursor: pointer;
+    }
+}
+
+
+/* ------------------------------all Products page------------------------- */
+
+.row-2 {
+    /* .row-2 ke andar justify-content space-between ki setting hai */
+    justify-content: space-between;
+    margin: 100px auto 50px;
+    /* Margin set kiya gaya hai */
+}
+
+/* select element ke liye styling */
+select {
+    border: 1px solid #ff562b;
+    /* Border color set kiya gaya hai */
+    padding: 5px;
+    /* Padding diya gaya hai */
+    cursor: pointer;
+    /* cursor pointer kara diya hai */
+}
+
+/* Jab select element focus ho, outline remove ho jayega */
+select:focus {
+    outline: none;
+    
+}
+
+/* ----------------design the page-btn for the chainging page-------------------------- */
+
+.page-btn {
+    margin: 0 auto 80px;
+    /* Margin from the top, center horizontally, and 80 pixels from the bottom */
+}
+
+.page-btn span {
+    display: inline-block;
+    /* Display as inline block */
+    border: 1px solid #ff523b;
+    /* Border style with color #ff523b */
+    margin: 10px;
+    /* Margin around the span */
+    width: 40px;
+    /* Width of the span */
+    height: 40px;
+    /* Height of the span */
+    text-align: center;
+    /* Center-align text within the span */
+    line-height: 40px;
+    /* Line height for vertical alignment */
+    cursor: pointer;
+    /* Cursor style */
+}
+
+.page-btn span:hover {
+    background: #ff523b;
+    /* Background color on hover */
+    color: white;
+    /* Text color on hover */
+}
+
+
+/*-------------------- Styling for single product section --------------------------*/
+.single-product {
+    margin-top: 80px;
+    /* Margin from the top */
+}
+
+.single-product .col-2 img {
+    padding: 0;
+    /* No padding for images within col-2 */
+}
+
+.single-product .col-2 {
+    padding: 20px;
+    /* Padding for col-2 */
+}
+
+.single-product h4 {
+    padding: 20px 0;
+    /* Padding for h4 element */
+    font-size: 22px;
+    /* Font size */
+    font-weight: bold;
+    /* Bold font weight */
+}
+
+.single-product select {
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+    /* Margin from the top */
+}
+
+.single-product input {
+    width: 50px;
+    /* Input width */
+    height: 40px;
+    /* Input height */
+    padding-left: 10px;
+    /* Left padding */
+    font-size: 20px;
+    /* Font size */
+    margin-right: 10px;
+    /* Margin from the right */
+    border: 1px solid #ff523b;
+    /* Border style */
+}
+
+input:focus {
+    outline: none;
+    /* Remove outline on focus */
+}
+
+.single-product .fa {
+    color: #ff523b;
+    /* Font Awesome icon color */
+    margin-left: 10px;
+    /* Margin from the left */
+}
+
+/* Styling for small image row */
+.small-img-row {
+    display: flex;
+    justify-content: space-between;
+    /* Space between small images */
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    /* Flex basis for small image columns */
+    cursor: pointer;
+    /* Cursor style */
+}
+
+/* ---------------------------Styling for cart items----------------- */
+.cart-page {
+    margin: 80px auto;
+    /* Margin for cart page */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    /* Collapse table borders */
+}
+
+.cart-info {
+    display: flex;
+    flex-wrap: wrap;
+    /* Flex wrap for cart info */
+}
+
+th {
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #ff523b;
+    /* Background color for table header */
+    font-weight: normal;
+    /* Normal font weight */
+}
+
+td {
+    padding: 10px 5px;
+    /* Padding for table data cells */
+}
+
+td input {
+    width: 40px;
+    /* Input width */
+    height: 30px;
+    /* Input height */
+    padding: 5px;
+    /* Input padding */
+}
+
+td a {
+    color: #ff523b;
+    /* Link color */
+    font-size: 12px;
+    /* Font size for links */
+}
+
+td img {
+    width: 80px;
+    /* Image width */
+    height: 80px;
+    /* Image height */
+    margin-right: 10px;
+    /* Margin from the right */
+}
+
+.total-price {
+    display: flex;
+    justify-content: flex-end;
+    /* Align total price to the right */
+}
+
+.total-price table {
+    border-top: 3px solid #ff523b;
+    /* Top border for total price table */
+    width: 100%;
+    max-width: 400px;
+    /* Maximum width for total price table */
+}
+
+td:last-child {
+    text-align: right;
+    /* Right-align last child of table data cells */
+}
+
+
+
+
+
+/* ------------------------ Account-page ka CSS -------------------------*/
+.account-page {
+    /* Padding: 50 pixels from top and bottom, 0 from left and right */
+    padding: 50px 0;
+    /* Background gradient: white to light pink */
+    background: radial-gradient(#fff, #ffd6d6);
+}
+
+/* .form-container ka CSS */
+.form-container {
+    /* Form container ka background color, width, height, position, text alignment, padding, margin, box shadow, aur overflow ka set kiya gaya hai */
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* .form-container span ka CSS */
+.form-container span {
+    /* Font weight: bold, padding: 0 se 10 pixels, color: #555, cursor: pointer, width: 100 pixels, aur display: inline-block */
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+
+/* .form-btn ka CSS */
+.form-btn {
+    /* Display: inline-block */
+    display: inline-block;
+}
+
+/* .form-container form ka CSS */
+.form-container form {
+    /* Max width: 300 pixels, padding: 0 se 20 pixels, position: absolute, top: 130 pixels, aur transition: transform 1 second */
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+}
+
+/* form input ka CSS */
+form input {
+    /* Width: 100%, height: 30 pixels, margin: 10 pixels upar neeche, padding: 0 se 10 pixels, aur border: 1 pixel solid #ccc */
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+
+/* form .btn ka CSS */
+form .btn {
+    /* Width: 100%, border: koi nahi, cursor: pointer, aur margin: 10 pixels upar neeche */
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+/* form .btn:focus ka CSS */
+form .btn:focus {
+    /* Outline: kuch nahi */
+    outline: none;
+}
+
+/* #login-form ka CSS */
+#login-form {
+    /* Left: -300 pixels */
+    left: -300px;
+}
+
+/* #register-form ka CSS */
+#register-form {
+    /* Left: 0 pixels */
+    left: 0;
+}
+
+/* form a ka CSS */
+form a {
+    /* Font size: 12 pixels */
+    font-size: 12px;
+}
+
+/* #Indicator ka CSS */
+#Indicator {
+    /* Width: 100 pixels, border: kuch nahi, background: #ff523b, height: 3 pixels, margin-top: 8 pixels, transform: translateX(100 pixels), aur transition: transform 1 second */
+    width: 100px;
+    border: none;
+    background: #ff523b;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
+
+
+
+/* ----------------------Media Query for less than 600 screen size ------------------------- */
+
+@media only screen and (max-width:600px) {
+
+    /* Media query sirf screen ke liye jahan maximum width 600px hai */
+    .row {
+        /* Text alignment center kiya gaya hai */
+        text-align: center;
+    }
+
+    .col-2,
+    .col-3,
+    .col-4 {
+        /* Flex basis 100% set ki gayi hai */
+        flex-basis: 100%;
+
+    }
+
+    /* Ek product */
+    .single-product .row {
+        /* Text alignment left kiya gaya hai */
+        text-align: left;
+
+    }
+
+    /* Ek product */
+    .single-product .col-2 {
+        /* Padding set kiya gaya hai */
+        padding: 20px 0;
+    }
+
+    /* Ek page */
+    .single-product h1 {
+        /* Font size aur line height set kiya gaya hai */
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    /* Cart media query */
+    .cart-info p {
+        /* Display none kiya gaya hai */
+        display: none;
+
+    }
+
+}

@@ -1,0 +1,321 @@
+<!DOCTYPE html> <!-- Ye line browser ko batati hai ki HTML5 document hai -->
+<html lang="en"> <!-- HTML document start hota hai yaha se aur 'en' language set karta hai -->
+  <head> <!-- Head section start hota hai yaha se -->
+    <meta charset="UTF-8" /> <!-- Character encoding set karta hai UTF-8 ke liye -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Responsive design ke liye viewport set karta hai -->
+    <title>Product-details - RedStore</title> <!-- Webpage ka title set karta hai -->
+    <!-- font-awesome icon-kit -->
+    <script src="https://kit.fontawesome.com/f16641d2de.js" crossorigin="anonymous"></script> <!-- Font-awesome icons ke liye external script add karta hai -->
+    <link rel="stylesheet" href="style.css" /> <!-- External CSS file link karta hai -->
+  </head>
+  <body> <!-- Body section start hota hai yaha se -->
+    <div class="container"> <!-- Container div start hota hai yaha se -->
+      <div class="navbar"> <!-- Navbar section start hota hai -->
+        <div class="logo"> <!-- Logo section start hota hai -->
+          <a href="index.html"><img src="./assets/logo.png" alt="Logo_image" width="125px" /></a>
+           <!-- Logo image add karta hai -->
+        </div>
+        <nav> <!-- Navigation section start hota hai -->
+          <ul id="MenuItems"> <!-- Menu items list start hoti hai -->
+            <li><a href="./index.html">Home</a></li> <!-- Home menu item -->
+            <li><a href="products.html">Product</a></li> <!-- Product menu item -->
+            <li><a href="https://redhomestore.com/" target="blank">About</a></li> <!-- About menu item -->
+            <li><a href="./accountpage.html">Contact</a></li> <!-- Contact menu item -->
+            <li><a href="./accountpage.html">Account</a></li> <!-- Account menu item -->
+          </ul>
+        </nav>
+        <a href="./cart.html"> <img src="./assets/cart.png" alt="Cart_image" width="30px" height="30px" /></a><!-- Cart icon image add karta hai -->
+        
+        <img src="./assets/menu.png" alt="menu" class="menu-icon" onclick="menutoggle()" /> <!-- Menu icon image add karta hai aur click pe menutoggle function call karta hai -->
+      </div>
+    </div>
+ 
+
+<!-- Image top part -->
+    <div class="small-container">
+    
+
+      <div class="row row-2">
+        <h2>All Products</h2>
+        <select>
+          <option value="">Default Shorting</option>
+          <option value="">Short by price</option>
+          <option value="">Short by popularity</option>
+          <option value="">Short by rating</option>
+          <option value="">Short by sale</option>
+        </select>
+      </div>
+      <div class="row">
+        <!-- product 1 -->
+
+        <div class="col-4">
+          <a href="./product-details.html"> <img src="./assets/product-1.jpg" alt="product1" /></a>
+         
+          <h4>Red Printed T-shirt</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <!-- product 2 -->
+        <div class="col-4">
+          <img src="./assets/product-2.jpg" alt="product1" />
+          <h4>Black ZZ Rock Shoes</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>$20.00</p>
+        </div>
+        <!-- product 3 -->
+        <div class="col-4">
+          <img src="./assets/product-3.jpg" alt="product1" />
+          <h4>Grey Trouser Hawk</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>$500.00</p>
+        </div>
+        <!-- product 4 -->
+        <div class="col-4">
+          <img src="./assets/product-4.jpg" alt="product1" />
+          <h4>Blue Printed T-shirt</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>$100.00</p>
+        </div>
+      </div>
+
+      
+    <!------- product row part 2 second row ------- --->
+      <div class="row">
+        <!-- product 5 -->
+        <div class="col-4">
+          <img src="./assets/product-5.jpg" alt="product1" />
+          <h4>Jordan Rockstar 2</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p>$350.00</p>
+        </div>
+        <!-- product 6 -->
+        <div class="col-4">
+          <img src="./assets/product-6.jpg" alt="product1" />
+          <h4>Puma Back-Capi Seal</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>$2000.00</p>
+        </div>
+        <!-- product 7 -->
+        <div class="col-4">
+          <img src="./assets/product-7.jpg" alt="product1" />
+          <h4>Black and White Shocks</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>$10.00</p>
+        </div>
+        <!-- product 8 -->
+        <div class="col-4">
+          <img src="./assets/product-8.jpg" alt="product1" />
+          <h4>Fossils Black Python</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>$800.00</p>
+        </div>
+        <!-- product 9 -->
+
+        <div class="col-4">
+          <img src="./assets/product-9.jpg" alt="product1" />
+          <h4>Abdeartean Sea Focus</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>$450.80</p>
+        </div>
+        <!-- product 10 -->
+
+        <div class="col-4">
+          <img src="./assets/product-10.jpg" alt="product1" />
+          <h4>Black X Shoes</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>$488.10</p>
+        </div>
+        <!-- product 11 -->
+
+        <div class="col-4">
+          <img src="./assets/product-11.jpg" alt="product1" />
+          <h4>Fit Jogging Shoes</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>$50.90</p>
+        </div>
+        <!-- product 12 -->
+
+        <div class="col-4">
+          <img src="./assets/product-12.jpg" alt="product1" />
+          <h4>Balck Jimming Trouser</h4>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>$300.50</p>
+        </div>
+      </div>
+
+
+      <!-- design the next page with arrow icon  -->
+      <div class="page-btn">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>&#8594;</span>
+
+      </div>
+
+
+    </div>
+
+    <!-- footer  -->
+    <div class="footer">
+      <!-- Footer section start -->
+      <div class="container">
+        <!-- Container div for footer content -->
+        <div class="row">
+          <!-- Row div to arrange columns -->
+
+          <!-- column 1 -->
+          <div class="footer-col-1">
+            <!-- First column in footer -->
+            <h3>Download Our App</h3>
+            <!-- Heading for app download -->
+            <p>Download App for Android and ios mobile phone.</p>
+            <!-- Description for app download -->
+            <div class="app-logo">
+              <!-- Div for app store logos -->
+              <img src="./assets/play-store.png" alt="play-store" />
+              <!-- Play Store logo -->
+              <img src="./assets/app-store.png" alt="app-store" />
+              <!-- App Store logo -->
+            </div>
+          </div>
+
+          <!-- column 2 -->
+          <div class="footer-col-2">
+            <!-- Second column in footer -->
+            <img src="./assets/logo-white.png" alt="logo-white" />
+            <!-- White logo image -->
+            <p>
+              <!-- Purpose statement paragraph -->
+              Our Purpose Is To Sustainably Make the Pleasure and Benifits of
+              Sports Accessible to the Many.
+            </p>
+          </div>
+
+          <!-- column 3 -->
+          <div class="footer-col-3">
+            <!-- Third column in footer -->
+            <h3>Useful Links</h3>
+            <!-- Heading for useful links -->
+            <ul>
+              <!-- Unordered list for links -->
+              <li>Coupons</li>
+              <!-- List item for Coupons -->
+              <li>Blog Post</li>
+              <!-- List item for Blog Post -->
+              <li>Return Policy</li>
+              <!-- List item for Return Policy -->
+              <li>Join Affiliate</li>
+              <!-- List item for Join Affiliate -->
+            </ul>
+          </div>
+
+          <!-- column 4 -->
+          <div class="footer-col-4">
+            <!-- Fourth column in footer,  -->
+            <h3>Follow us</h3>
+            <!-- Heading for social media follow links -->
+            <ul>
+              <!-- Unordered list for social media links -->
+              <li><i class="fa-brands fa-facebook"></i></li>
+              <!-- List item for Facebook -->
+              <li><i class="fa-brands fa-x-twitter"></i></li>
+              <!-- List item for X (Twitter) -->
+              <li><i class="fa-brands fa-instagram"></i></li>
+              <!-- List item for Instagram -->
+              <li><i class="fa-brands fa-youtube"></i></li>
+              <!-- List item for Youtube -->
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <!-- Horizontal rule for separation -->
+        <p class="copyright">ⒸCopyright 2024 - RedStore</p>
+        <!-- Copyright notice -->
+      </div>
+    </div>
+    <!-- Footer section end -->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RedStore | Ecommerce Website Design</title>
+    <!-- font-awesome icon-kit Here -->
+    <script
+      src="https://kit.fontawesome.com/f16641d2de.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- This is link for the Animation  -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <!-- My style.css link here -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <!-- Header ka div -->
+      <div class="container">
+        <!-- Container start -->
+        <div class="navbar">
+          <!-- Navbar section -->
+          <div class="logo animate__animated animate__heartBeat  animate__infinite" >
+            <!-- Logo section -->
+            <a href="index.html">
+              <!-- Logo ki link -->
+              <img src="./assets/logo.png" alt="Logo_image" width="125px" />
+            </a>
+          </div>
+          <nav class="animate__animated animate__flipInX animate__delay-2s">
+            <ul id="MenuItems">
+              <!-- Menu ki list -->
+              <li><a href="index.html">Home</a></li>
+              <!-- Home link -->
+              <li><a href="products.html">Product</a></li>
+              <!-- Product link -->
+              <li><a href="https://redhomestore.com/" target="blank">About</a></li>
+              <!-- About link -->
+              <li><a href="accountPage.html">Contact</a></li>
+              <!-- Contact link -->
+              <li><a href="accountpage.html">Account</a></li>
+              <!-- Account link -->
+            </ul>
+          </nav>
+          <a href="cart.html" class="animate__animated animate__flipInX animate__delay-2s">
+            <!-- Cart ka link -->
+            <img
+              src="./assets/cart.png"
+              alt="Cart_image"
+              width="30px"
+              height="30px"
+            />
+          </a>
+          <img
+            src="./assets/menu.png"
+            alt="menu"
+            class="menu-icon"
+            onclick="menutoggle()"
+          />
+        </div>
+        <div class="row">
+          <!-- Row div -->
+          <div class="col-2 animate__animated animate__zoomInDown animate__delay-3s">
+            <!-- Pehla column -->
+            <h1>Give Your Workout<br />A New Style!</h1>
+            <!-- Heading -->
+            <p>
+              Success isn't always about greatness. It's about consistency.
+              Consistent<br />hard work gains success. Greatness will come.
+            </p>
+            <!-- Paragraph -->
+            <a href="accountpage.html" class="btn">Explore Now &#8594;</a>
+            <!-- Button -->
+          </div>
+          <div class="col-2 animate__animated animate__slideInRight">
+            <!-- Doosra column -->
+            <img src="./assets/image1.png" alt="Hero_image" />
+            <!-- Hero image -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------feature categories --------->
+
+    <div class="categories">
+      <!-- Categories ka section start -->
+      <div class="small-container ">
+        <!-- Chhoti container start -->
+        <div class="row">
+          <!-- Row div to arrange categories in a row -->
+          <div class="col-3">
+            <!-- Pehla category column -->
+            <img src="./assets/category-1.jpg" alt="image 1" />
+            <!-- Pehla category image -->
+          </div>
+          <div class="col-3">
+            <!-- Doosra category column -->
+            <img src="./assets/category-2.jpg" alt="image 2" />
+            <!-- Doosra category image -->
+          </div>
+          <div class="col-3">
+            <!-- Teesra category column -->
+            <img src="./assets/category-3.jpg" alt="image 3" />
+            <!-- Teesra category image -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Categories ka section end -->
+
+    <!----------------- Featured products --------------->
+
+    <div class="small-container">
+      <!-- Chhoti container start -->
+      <h2 class="title">Featured Products</h2>
+      <!-- Featured Products ka title -->
+      <div class="row">
+        <!-- Row div to arrange products in a row -->
+        <!-- product 1 -->
+        <div class="col-4">
+          <!-- Pehla product column -->
+          <a href="product-details.html">
+            <img src="./assets/product-1.jpg" alt="product1"
+          /></a>
+          <!-- Product image with link -->
+          <a href="product-details.html"> <h4>Red Printed T-shirt</h4></a>
+          <!-- Product name with link -->
+          <div class="rating">
+            <!-- Rating stars -->
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p>$50.00</p>
+          <!-- Product price -->
+        </div>
+        <!-- product 2 -->
+        <div class="col-4">
+          <!-- Doosra product column -->
+          <img src="./assets/product-2.jpg" alt="product2" />
+          <!-- Product image, alt text corrected -->
+          <h4>Black ZZ Rock Shoes</h4>
+          <!-- Product name -->
+          <div class="rating">
+            <!-- Rating stars -->
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>$20.00</p>
+          <!-- Product price -->
+        </div>
+        <!-- product 3 -->
+        <div class="col-4">
+          <!-- Teesra product column -->
+          <img src="./assets/product-3.jpg" alt="product3" />
+          <!-- Product image, alt text corrected -->
+          <h4>Grey Trouser Hawk</h4>
+          <!-- Product name -->
+          <div class="rating">
+            <!-- Rating stars -->
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p>$500.00</p>
+          <!-- Product price -->
+        </div>
+        <!-- product 4 -->
+        <div class="col-4">
+          <!-- Chautha product column -->
+          <img src="./assets/product-4.jpg" alt="product4" />
+          <!-- Product image, alt text corrected -->
+          <h4>Blue Printed T-shirt</h4>
+          <!-- Product name -->
+          <div class="rating">
+            <!-- Rating stars -->
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>$100.00</p>
+          <!-- Product price -->
+        </div>
+      </div>
+
+      <!------------------------------ Latest Products --------------------------->
+      <h2 class="title">Latest Products</h2>
+      <!-- Latest Products ka title -->
+      <div class="row">
+        <!-- Row div to arrange latest products in a row -->
+        <!-- product 5 -->
+        <div class="col-4">
+          <!-- Paachva product column -->
+          <img src="./assets/product-5.jpg" alt="product5" />
+          <!-- Product image, alt text corrected -->
+          <h4>Jordan Rockstar 2</h4>
+          <!-- Product name -->
+          <div class="rating">
+            <!-- Rating stars -->
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p>$350.00</p>
+          <!-- Product price -->
+        </div>
+        <!-- product 6 -->
+        <div class="col-4">
+          <!-- Chhatha product column -->
+          <img src="./assets/product-6.jpg" alt="product6" />
+          <!-- Product image, alt text corrected -->
+          <h4>Puma Back-Capi Seal</h4>
+          <!-- Product name -->
+          <div class="rating">
+            <!-- Rating stars -->
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+
+            <i class="fa-solid fa-star"></i>
+
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p>$2000.00</p>
+          <!-- Product price -->
+        </div>
+        <!-- product 7 -->
+        <div class="col-4">
+          <!-- Saatva product column -->
+          <img src="./assets/product-7.jpg" alt="product7" />
+          <!-- Product image, alt text corrected -->
+          <h4>Black and White Shocks</h4>
+          <!-- Product name -->
+          <div class="rating">
+            <!-- Rating stars -->
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>$10.00</p>
+          <!-- Product price -->
+        </div>
+        <!-- product 8 -->
+        <div class="col-4">
+          <!-- Aathva product column -->
+          <img src="./assets/product-8.jpg" alt="product8" />
+          <!-- Product image, alt text corrected -->
+          <h4>Fossils Black Python</h4>
+          <!-- Product name -->
+          <div class="rating">
+            <!-- Rating stars -->
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>$800.00</p>
+          <!-- Product price -->
+        </div>
+        <!-- product 9 -->
+        <div class="col-4">
+          <!-- Nauva product column -->
+          <img src="./assets/product-9.jpg" alt="product9" />
+          <!-- Product image, alt text corrected -->
+          <h4>Abdeartean Sea Focus</h4>
+          <!-- Product name -->
+          <div class="rating">
+            <!-- Rating stars -->
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>$450.80</p>
+          <!-- Product price -->
+        </div>
+        <!-- product 10 -->
+        <div class="col-4">
+          <!-- Dasva product column -->
+          <img src="./assets/product-10.jpg" alt="product10" />
+          <!-- Product image, alt text corrected -->
+          <h4>Black X Shoes</h4>
+          <!-- Product name -->
+          <div class="rating">
+            <!-- Rating stars -->
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>$488.10</p>
+          <!-- Product price -->
+        </div>
+        <!-- product 11 -->
+        <div class="col-4">
+          <!-- Gyarahva product column -->
+          <img src="./assets/product-11.jpg" alt="product11" />
+          <!-- Product image, alt text corrected -->
+          <h4>Fit Jogging Shoes</h4>
+          <!-- Product name -->
+          <div class="rating">
+            <!-- Rating stars -->
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>$50.90</p>
+          <!-- Product price -->
+        </div>
+        <!-- product 12 -->
+        <div class="col-4">
+          <!-- Barahva product column -->
+          <img src="./assets/product-12.jpg" alt="product12" />
+          <!-- Product image, alt text corrected -->
+          <h4>Balck Jimming Trouser</h4>
+          <!-- Product name -->
+          <div class="rating">
+            <!-- Rating stars -->
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p>$300.50</p>
+          <!-- Product price -->
+        </div>
+      </div>
+    </div>
+    <!-- Chhoti container end -->
+
+    <!--------------------- offer ----------------------------->
+
+    <div class="offer">
+      <!-- Offer section ka start -->
+      <div class="small-container">
+        <!-- Small container for the offer -->
+        <div class="row">
+          <!-- Row div to arrange offer content in a row -->
+          <div class="col-2">
+            <!-- Pehli column for the image -->
+            <img
+              src="./assets/exclusive.png"
+              alt="exclusive image"
+              class="offer-img"
+            />
+            <!-- Exclusive product image -->
+          </div>
+          <div class="col-2">
+            <!-- Doosri column for the offer details -->
+            <p>Exclusively Available on Redstore</p>
+            <!-- Exclusive availability message -->
+            <h1>Smart Band 10</h1>
+            <!-- Product name -->
+            <small
+              >The Mi Smart Band 4 features a 25.9% larger(than Mi Band 6)
+              AMOLED color full-touch display with adjustable brightness, so
+              everything is clear as can be.</small
+            >
+            <!-- Product description, spacing error corrected -->
+            <br />
+            <!-- Line break -->
+            <a href="./cart.html" class="btn">Buy Now &#8594;</a>
+            <!-- Buy now button with arrow -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Offer section ka end -->
+
+    <!------------ Testimonial Part --------------------->
+
+    <div class="testimonial">
+      <!-- Testimonial section ka start -->
+      <div class="small-container">
+        <!-- Small container for testimonials -->
+        <div class="row">
+          <!-- Row div to arrange testimonials in a row -->
+          <!-- user col 1 -->
+          <div class="col-3 animate__animated animate__backInLeft">
+            <!-- Pehli column user testimonial ke liye -->
+            <i class="fa fa-quote-left"></i>
+            <!-- Quote icon -->
+
+            <p>
+              Innovations in the tech world are emerging rapidly, with companies
+              pushing the boundaries of what's possible. New devices are
+              integrating seamlessly into our daily routines, enhancing our
+              lives in various ways. As technology evolves, so do our
+              expectations, with advancements in communication tools, health
+              monitoring systems, and smart home devices. The future promises a
+              landscape where technology not only supports but also anticipates
+              our needs. Staying informed and adaptable is crucial, as each new
+              advancement has the potential to redefine our relationship with
+              the digital world.
+            </p>
+            <!-- User review content -->
+            <div class="rating">
+              <!-- Rating div -->
+              <i class="fa-solid fa-star"></i>
+              <!-- Star rating 1 -->
+              <i class="fa-solid fa-star"></i>
+              <!-- Star rating 2 -->
+              <i class="fa-solid fa-star"></i>
+              <!-- Star rating 3 -->
+              <i class="fa-solid fa-star"></i>
+              <!-- Star rating 4 -->
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <!-- Half star rating 5 -->
+            </div>
+            <img src="./assets/user-1.png" alt="userImage" />
+            <!-- User image -->
+            <h3>Sean Parker</h3>
+            <!-- User name -->
+          </div>
+          <!-- user col 2 -->
+          <div class="col-3 animate__animated animate__backInDown">
+            <!-- Doosri column user testimonial ke liye -->
+            <i class="fa fa-quote-left"></i>
+            <!-- Quote icon -->
+
+            <p>
+              The highly anticipated Redmi Watch 10 has officially launched
+              today, marking a significant step forward in wearable technology.
+              This new offering from Redmi is designed to meet the needs of
+              tech-savvy consumers who seek a perfect blend of style,
+              functionality, and affordability. Featuring a sleek design,
+              vibrant display, and an array of health monitoring tools, the
+              Redmi Watch 10 aims to enhance the daily lives of its users. With
+              a battery life that promises to outlast many of its competitors,
+              this smartwatch is poised to become a favorite among fitness
+              enthusiasts and busy professionals alike.
+            </p>
+            <!-- User review content, spacing error corrected -->
+            <div class="rating">
+              <!-- Rating div -->
+              <i class="fa-solid fa-star"></i>
+              <!-- Star rating 1 -->
+              <i class="fa-solid fa-star"></i>
+              <!-- Star rating 2 -->
+              <i class="fa-solid fa-star"></i>
+              <!-- Star rating 3 -->
+              <i class="fa-solid fa-star"></i>
+              <!-- Star rating 4 -->
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <!-- Half star rating 5 -->
+            </div>
+            <img src="./assets/user-2.png" alt="userImage" />
+            <!-- User image -->
+            <h3>Mike Smith</h3>
+            <!-- User name -->
+          </div>
+
+          <!-- user col 3 -->
+          <div class="col-3  animate__animated animate__backInRight">
+            <!-- Teesri column user testimonial ke liye -->
+            <i class="fa fa-quote-left"></i>
+            <!-- Quote icon -->
+
+            <p>
+              Customer satisfaction with the Redmi Watch 10 is expected to be
+              high due to its impressive features and competitive price. Early
+              reviews praise its user-friendly interface, robust build, and
+              comprehensive fitness tracking. Users appreciate its seamless
+              smartphone integration for easy notifications and app control.
+              Health-conscious consumers value its heart rate, sleep, and vital
+              metric monitoring. Customizable watch faces and interchangeable
+              straps add a personal touch, enhancing the overall user
+              experience.
+            </p>
+            <!-- User review content -->
+            <div class="rating">
+              <!-- Rating div -->
+              <i class="fa-solid fa-star"></i>
+              <!-- Star rating 1 -->
+              <i class="fa-solid fa-star"></i>
+              <!-- Star rating 2 -->
+              <i class="fa-solid fa-star"></i>
+              <!-- Star rating 3 -->
+              <i class="fa-solid fa-star"></i>
+              <!-- Star rating 4 -->
+              <i class="fa-solid fa-star-half-stroke"></i>
+              <!-- Half star rating 5 -->
+            </div>
+            <img src="./assets/user-3.png" alt="userImage" />
+            <!-- User image -->
+            <h3>Mobel Joe</h3>
+            <!-- User name -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial section ka end -->
+
+    <!-------------------- brands ------------------------->
+    <div class="brands">
+      <!-- Brands section ka start -->
+      <div class="small-container">
+        <!-- Small container div for brands -->
+        <div class="row">
+          <!-- Row div to arrange logos in a row -->
+          <div class="col-5">
+            <!-- First column for Godrej logo -->
+            <img src="./assets/logo-godrej.png" alt="logo-godrej" />
+            <!-- Godrej logo image -->
+          </div>
+          <div class="col-5">
+            <!-- Second column for Oppo logo -->
+            <img src="./assets/logo-oppo.png" alt="logo-oppo" />
+            <!-- Oppo logo image, alt text ko correct kiya -->
+          </div>
+          <div class="col-5">
+            <!-- Third column for Coca-Cola logo -->
+            <img src="./assets/logo-coca-cola.png" alt="logo-coca-cola" />
+            <!-- Coca-Cola logo image, alt text ko correct kiya -->
+          </div>
+          <div class="col-5">
+            <!-- Fourth column for PayPal logo -->
+            <img src="./assets/logo-paypal.png" alt="logo-paypal" />
+            <!-- PayPal logo image, alt text ko correct kiya -->
+          </div>
+          <div class="col-5">
+            <!-- Fifth column for Philips logo -->
+            <img src="./assets/logo-philips.png" alt="logo-philips" />
+            <!-- Philips logo image, alt text ko correct kiya -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Brands section ka end -->
+
+    <!------------------------- footer  ------------------------------->
+    <div class="footer">
+      <!-- Footer section start -->
+      <div class="container">
+        <!-- Container div for footer content -->
+        <div class="row">
+          <!-- Row div to arrange columns -->
+
+          <!-- column 1 -->
+          <div class="footer-col-1">
+            <!-- First column in footer -->
+            <h3>Download Our App</h3>
+            <!-- Heading for app download -->
+            <p>Download App for Android and ios mobile phone.</p>
+            <!-- Description for app download -->
+            <div class="app-logo">
+              <!-- Div for app store logos -->
+              <img src="./assets/play-store.png" alt="play-store" />
+              <!-- Play Store logo -->
+              <img src="./assets/app-store.png" alt="app-store" />
+              <!-- App Store logo -->
+            </div>
+          </div>
+
+          <!-- column 2 -->
+          <div class="footer-col-2">
+            <!-- Second column in footer -->
+            <img src="./assets/logo-white.png" alt="logo-white" />
+            <!-- White logo image -->
+            <p>
+              <!-- Purpose statement paragraph -->
+              Our Purpose Is To Sustainably Make the Pleasure and Benifits of
+              Sports Accessible to the Many.
+            </p>
+          </div>
+
+          <!-- column 3 -->
+          <div class="footer-col-3">
+            <!-- Third column in footer -->
+            <h3>Useful Links</h3>
+            <!-- Heading for useful links -->
+            <ul>
+              <!-- Unordered list for links -->
+              <li>Coupons</li>
+              <!-- List item for Coupons -->
+              <li>Blog Post</li>
+              <!-- List item for Blog Post -->
+              <li>Return Policy</li>
+              <!-- List item for Return Policy -->
+              <li>Join Affiliate</li>
+              <!-- List item for Join Affiliate -->
+            </ul>
+          </div>
+
+          <!-- column 4 -->
+          <div class="footer-col-4">
+            <!-- Fourth column in footer,  -->
+            <h3>Follow us</h3>
+            <!-- Heading for social media follow links -->
+            <ul>
+              <!-- Unordered list for social media links -->
+
+              <li><i class="fa-brands fa-facebook"></i></li>
+
+              <!-- List item for Facebook -->
+              <li><i class="fa-brands fa-x-twitter"></i></li>
+              <!-- List item for X (Twitter) -->
+              <li><i class="fa-brands fa-instagram"></i></li>
+              <!-- List item for Instagram -->
+              <li><i class="fa-brands fa-youtube"></i></li>
+              <!-- List item for Youtube -->
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <!-- Horizontal rule for separation -->
+        <p class="copyright">ⒸCopyright 2024 - RedStore</p>
+        <!-- Copyright notice -->
+      </div>
+    </div>
+    <!-- Footer section end -->
+
+    <!----------- link the JavaScript code Here ----------->
+    <script src="script.js"></script>
+  </body>
+</html>

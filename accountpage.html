@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Page- RedStore</title>
+    <!-- font-awesome icon-kit -->
+    <script
+      src="https://kit.fontawesome.com/f16641d2de.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="./assets/logo.png" alt="Logo_image" width="125px" />
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Account</a></li>
+          </ul>
+        </nav>
+        <img
+          src="./assets/cart.png"
+          alt="Cart_image"
+          width="30px"
+          height="30px"
+        />
+        <img
+          src="./assets/menu.png"
+          alt="menu"
+          class="menu-icon"
+          onclick="menutoggle()"
+        />
+      </div>
+    </div>
+
+    <!-- Account Page-->
+    <!-- Yaha pe account page ka div hai -->
+<div class="account-page">
+  <div class="container">
+      <div class="row">
+          <div class="col-2">
+              <!-- Image1 -->
+              <img src="./assets/image1.png" alt="image1" width="100%">
+          </div>
+          <div class="col-2">
+              <div class="form-container">
+                  <div class="form-btn">
+                      <!-- Login aur Register ke buttons -->
+                      <span onclick="login()">Login</span>
+                      <span onclick="register()">Register</span>
+                      <!-- Indicator -->
+                      <hr id="Indicator">
+                  </div>
+                  <!-- Login form -->
+                  <form id="login-form">
+                      <!-- Username input -->
+                      <input type="text" placeholder="Username">
+                      <!-- Password input -->
+                      <input type="password" placeholder="password">
+                      <!-- Login button -->
+                      <button type="submit" class="btn" >Login</button>
+                      <!-- Forgot password link -->
+                      <a href="#">Forgot password</a>
+                  </form>
+                  <!-- Register form -->
+                  <form id="register-form">
+                      <!-- Username input -->
+                      <input type="text" placeholder="Username">
+                      <!-- Email input -->
+                      <input type="email" placeholder="Email">
+                      <!-- Password input -->
+                      <input type="password" placeholder="password">
+                      <!-- Register button -->
+                      <button type="submit" class="btn" >Register</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+    <!-- footer  -->
+    <div class="footer">
+      <!-- Footer section start -->
+      <div class="container">
+        <!-- Container div for footer content -->
+        <div class="row">
+          <!-- Row div to arrange columns -->
+
+          <!-- column 1 -->
+          <div class="footer-col-1">
+            <!-- First column in footer -->
+            <h3>Download Our App</h3>
+            <!-- Heading for app download -->
+            <p>Download App for Android and ios mobile phone.</p>
+            <!-- Description for app download -->
+            <div class="app-logo">
+              <!-- Div for app store logos -->
+              <img src="./assets/play-store.png" alt="play-store" />
+              <!-- Play Store logo -->
+              <img src="./assets/app-store.png" alt="app-store" />
+              <!-- App Store logo -->
+            </div>
+          </div>
+
+          <!-- column 2 -->
+          <div class="footer-col-2">
+            <!-- Second column in footer -->
+            <img src="./assets/logo-white.png" alt="logo-white" />
+            <!-- White logo image -->
+            <p>
+              <!-- Purpose statement paragraph -->
+              Our Purpose Is To Sustainably Make the Pleasure and Benifits of
+              Sports Accessible to the Many.
+            </p>
+          </div>
+
+          <!-- column 3 -->
+          <div class="footer-col-3">
+            <!-- Third column in footer -->
+            <h3>Useful Links</h3>
+            <!-- Heading for useful links -->
+            <ul>
+              <!-- Unordered list for links -->
+              <li>Coupons</li>
+              <!-- List item for Coupons -->
+              <li>Blog Post</li>
+              <!-- List item for Blog Post -->
+              <li>Return Policy</li>
+              <!-- List item for Return Policy -->
+              <li>Join Affiliate</li>
+              <!-- List item for Join Affiliate -->
+            </ul>
+          </div>
+
+          <!-- column 4 -->
+          <div class="footer-col-4">
+            <!-- Fourth column in footer,  -->
+            <h3>Follow us</h3>
+            <!-- Heading for social media follow links -->
+            <ul>
+              <!-- Unordered list for social media links -->
+              <li>Facebook</li>
+              <!-- List item for Facebook -->
+              <li>X</li>
+              <!-- List item for X (Twitter) -->
+              <li>Instagram</li>
+              <!-- List item for Instagram -->
+              <li>Youtube</li>
+              <!-- List item for Youtube -->
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <!-- Horizontal rule for separation -->
+        <p class="copyright">ⒸCopyright 2024 - RedStore</p>
+        <!-- Copyright notice -->
+      </div>
+    </div>
+    <!-- Footer section end -->
+
+    <!-- java Script code for Account -->
+    <script src="script.js"></script>
+  </body>
+</html>
